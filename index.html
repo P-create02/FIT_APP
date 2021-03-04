@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Make Your Life Fit</title>
+</head>
+<body style="overflow-x: hidden">
+    
+    <header class="start-container">
+        <div class="logo">
+            <h1>FIT APP</h1>
+        </div>
+        <a href="#app-container"><div class="button">
+            <button type="button">Start!</button>
+        </div></a>
+    </header>
+
+
+    <section class="video-container">
+        <div class="block-container">
+            <!-- JS -->
+        </div>
+        <video muted autoplay loop class="video-container">
+            <source src="./Video/25227552.mp4" type="video/mp4" class="vid">
+        </video>
+    </section>
+
+
+    <section class="time-container">
+        <h2>Start your new month better!</h2>
+        <div class="deadline-box">
+            <div class="deadline">
+                <div class="deadline-box">
+                    <h3 class="days">09</h3>
+                    <span>days</span>
+                </div>
+            </div>
+            <div class="deadline">
+                <div class="deadline-box">
+                    <h3 class="hours">09</h3>
+                    <span>hours</span>
+                </div>
+            </div>
+            <div class="deadline">
+                <div class="deadline-box">
+                    <h3 class="minutes">09</h3>
+                    <span>mins</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="advertisement-container">
+        <div class="advertisement-photo"></div>
+    </section>
+
+
+
+    <main class="app-container" id="app-container">
+        <i class="fas fa-user-alt"></i>
+        <form method="post" class="form">
+            <div class="gender">
+                <h3>About you..</h3>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="male">Female</label><br>
+            </div>
+
+            <div class="goal">
+                <h5>Goal</h5>
+                <select name="goal" id="goal" required>
+                    <option value="1">Reduction</option>
+                    <option value="2">Increase in muscle mass</option>
+                    <option value="3">Increase in strength</option>
+                    <option value="4">Flat belly</option>
+                </select>
+
+                <h5 class="two">Physical Activity</h5>
+                <select name="physical activity" id="goal" class="physical-activity" required>
+                    <option value="1">Almost none</option>
+                    <option value="2">Light - (exercises 2-3 times a month)</option>
+                    <option value="3">Moderate - (exercises 1-2 times a week)</option>
+                    <option value="4">Large - (exercises 3-5 times a week)</option>
+                    <option value="4">Very large</option>
+                </select>
+            </div>
+            
+            <div class="information">
+                <div class="age">
+                    <div class="text-01"></div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="years" min="1" required>
+                </div>
+                <div class="weight">
+                    <div class="text-02"></div>
+                    <label for="weight">Weight:</label>
+                    <input type="number" id="weight" name="weight" placeholder="kg" min="1" required>
+                </div>
+                <div class="height">
+                    <div class="text-03"></div>
+                    <label for="height">Height:</label>
+                    <input type="number" id="height" name="height" placeholder="cm" min="1" required>
+                </div>
+            </div>
+
+            <div class="btn-sub">NEXT STEP</div>
+        </form>
+    </main>
+
+    <section class="inf-conatiner">
+        <i class="far fa-times-circle exitt"></i>
+
+        <div class="health-parameters">
+            <i class="fas fa-id-card"></i>
+            <div class="calculation loading">
+                <div class="swiper-wrapper">
+                    <div class="swiper-info bmi-box">
+                        <h4>BMI</h4>
+                        <h3 class="bmi-text"></h3>
+                    </div>
+                    <div class="swiper-info bmr-box">
+                        <h4>BMR</h4>
+                        <h3 class="bmr-text"></h3>
+                    </div>
+                    <div class="swiper-info best-weight">
+                        <h4>BEST WEIGHT</h4>
+                        <h3 class="weight-text"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="result-boxxx">
+                <div class="result-text"></div>
+            </div>
+            <i class="far fa-hand-point-up"></i>
+        </div>
+
+        <div class="training-parameters">
+            <i class="far fa-hand-point-down"></i>
+            <div class="surface">
+                <i class="fas fa-running"></i>
+                <div class="exe-tim-week">
+                    <h4>The recommended number of training sessions per week is: <span class="how-many-training"></span></h4>
+                </div>
+                <div class="exercises">
+                    <i class="fas fa-dumbbell"></i>
+                    <div class="example-exercises">
+                        <h5><span class="series"></span> x <span class="repeat-exe"></span> x <span class="name-of-exe"></span></h5>
+                    </div>
+                    <div class="example-exercises">
+                        <h5><span class="series"></span> x <span class="repeat-exe"></span> x <span class="name-of-exe"></span></h5>
+                    </div>
+                    <div class="example-exercises">
+                        <h5><span class="series"></span> x <span class="repeat-exe"></span> x <span class="name-of-exe"></span></h5>
+                    </div>
+                    <div class="example-exercises">
+                        <h5><span class="series"></span> x <span class="repeat-exe"></span> x <span class="name-of-exe"></span></h5>
+                    </div>
+                    <div class="example-exercises">
+                        <h5><span class="series"></span> x <span class="repeat-exe"></span> x <span class="name-of-exe"></span></h5>
+                    </div>
+                    <div class="example-exercises">
+                        <h5><span class="series"></span> x <span class="repeat-exe"></span> x <span class="name-of-exe"></span></h5>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+
+
+    <div class="slaider-conatiner">
+        <h1>our best customers</h1>
+        <section class="swiper-container loading">
+            <div class="swiper-wrapper">
+            
+                <div class="swiper-slide slide1">   
+                    <div class="content">
+                    <p class="title" data-swiper-parallax="-5%" data-swiper-parallax-scale=".7">Max Green</p>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide slide2">
+                    <div class="content">
+                    <p class="title" data-swiper-parallax="-5%" data-swiper-parallax-scale=".7">Tom Deep</p>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide slide3">
+                
+                    <div class="content">
+                    <p class="title" data-swiper-parallax="-5%" data-swiper-parallax-scale=".7">Georgia Brown</p>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide slide4">
+                    <div class="content">
+                    <p class="title" data-swiper-parallax="-5%" data-swiper-parallax-scale=".7">Anna King</p>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide slide5"></div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <section class="customers-container">
+        <div class="customers">
+            <h1 class="anime-cust">0</h1>
+            <h2>satisfied customers</h2>
+        </div>
+        <div class="kilos">
+            <h1 class="anime-killos">0</h1>
+            <h2>dropped kilos</h2>
+        </div>
+        <div class="marriages">
+            <h1 class="anime-marr">0</h1>
+            <h2>marriages rescued</h2>
+        </div>
+    </section>
+
+
+      
+    <footer>
+        <div class="socials">
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-github-square"></i>
+        </div>
+        <h2>Page create by &copy; W. S. &copy; <span class="year"></span></h2>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+    <script src="./JS/vidoeAnimation.js"></script>
+    <script src="./JS/mainSpeedVideo.js"></script>
+    <script src="./JS/deadlineClock.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <script src="./JS/slider.js"></script>
+    <script src="./JS/valueAnimation.js"></script>
+    <script src="./JS/resultPage.js"></script>
+</body>
+</html>

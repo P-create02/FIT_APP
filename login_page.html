@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Make Your Life Fit</title>
+</head>
+<body>
+    <section class="form">
+        <video muted autoplay loop class="video-box">
+            <source src="./Video/25227552.mp4" type="video/mp4" class="vid">
+        </video>
+
+
+        <div class="account">
+
+            <form method="POST" class="login-form">
+                <i class="fas fa-user-circle"></i>
+                <input class="user-input" type="text" placeholder="Username" required>
+                <input class="user-input" type="password" placeholder="Password" required>
+                <div class="options-01">
+                    <label class="remember-me"><input type="checkbox" name="">Remember me</label>
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <a href="index.html"><input class="btn" type="submit" value="LOGIN"></a>
+                <div class="options-02">
+                    <p>Not Registered?<a href="#">Create an Account</a></p>
+                </div>
+            </form>
+
+
+            <form class="signup-form" method="POST">
+                <i class="fas fa-user-plus"></i>
+                <input class="user-input" type="text" placeholder="Username" required>
+                <input class="user-input" type="email" placeholder="Email Address" required>
+                <input class="user-input" type="password" name="" placeholder="Password" required>
+                <input class="btn" type="submit" value="SIGN UP">
+                <div class="options-02">
+                    <p>Already Registered?<a href="#">Sign In</a></p>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="./JS/loginForm.js"></script>
+</body>
+</html>
